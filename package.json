@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-vue-trace-reactive",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "",
   "keywords": [],
   "main": "dist/plugin.umd.js",
@@ -13,7 +13,7 @@
   "author": "mu <ueki.com@gmail.com>",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/iridgeinc/rollup-plugin-vue-trace-reactive"
   },
   "license": "MIT",
   "engines": {

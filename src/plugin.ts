@@ -2,6 +2,7 @@ import { createFilter as createFilter } from '@rollup/pluginutils';
 import { walk } from 'estree-walker';
 import MagicString from 'magic-string';
 
+const isDevelopment = process.env.NODE_ENV === 'development';
 type Node = any
 
 interface PluginOptions {
@@ -71,6 +72,7 @@ export function traceReactive(options: PluginOptions = {}) {
     name: 'rollup-plugin-vue-reactive',
     transform(code: string, id: string) {
       if (!filter(id)) return UNCHANGED;
+      if (!isDevelopment) return UNCHANGED;
       
       let ast
       try {
