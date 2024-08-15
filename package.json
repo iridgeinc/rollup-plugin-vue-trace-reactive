@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-vue-trace-reactive",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "",
   "keywords": [],
   "main": "dist/plugin.umd.js",
