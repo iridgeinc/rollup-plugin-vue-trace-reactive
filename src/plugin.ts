@@ -100,7 +100,6 @@ export function traceReactive(options: PluginOptions = {}) {
             rewriteTriger(1, magicString, args, trigger)
           } else if (name === 'computed') {
             const varname = parent.id?.name ?? parent.key?.name
-            console.log(varname)
             const trigger = genTrackFunction(name, varname)
             rewriteTriger(1, magicString, args, trigger)
           }
