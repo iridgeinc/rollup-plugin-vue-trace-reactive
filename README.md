@@ -1,4 +1,4 @@
-# inplace-copy
+# rollup-plugin-vue-trace-reactive
 
 ## Description
 `rollup-plugin-vue-trace-reactive` automatically inserts debug triggers for Vue computed, watch, etc.
