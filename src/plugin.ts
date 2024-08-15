@@ -90,7 +90,7 @@ export function traceReactive(options: PluginOptions = {}) {
           if (name !== 'watch' && name !== 'computed' && name !== 'watchEffect') return
           const argsEnd = node.arguments[node.arguments.length - 1].end;
           if (argsEnd === undefined) return
-          console.log(`inject tracking to ${name} in ${id} at ${argsEnd}`)
+          // console.log(`inject tracking to ${name} in ${id} at ${argsEnd}`)
           const args = node.arguments;
           if (name === 'watch'){
             const trigger = genTrackFunction(name, '')
